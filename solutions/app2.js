@@ -5,7 +5,7 @@ const countOfWorkingDaysBetween = (start, end) =>
 {
     let count = 0
     for(let d=start; d<=end; d.setDate(d.getDate() + 1))
-        count += isWorkDay(d) ? 1 : 0
+        count += isWorkDay(d) + 0
     return count
 }
 
